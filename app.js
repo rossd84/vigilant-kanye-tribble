@@ -25,15 +25,9 @@ const getKanyeWrapper = (wisdom) => `
 <button class="quotes" onClick="addWisdom()">
   Add
 </button>
-<<<<<<< HEAD
 <button onClick="resetWisdom()">Get A New Quote</button>
 <script>function addWisdom(){ fetch('/add') };function resetWisdom(){fetch('${KanyeURL}').then((response) => {
     return response.json()}).then((data) => {document.querySelector('h1').innerHTML = data.quote})}</script>
-=======
-<button class="quotes new_quote" onClick="window.location.reload();">New Quote</button>
-</div></main>
-<script>function addWisdom(){ fetch('/add') }</script>
->>>>>>> b33fa87... Add uniform css to all pages
 `
 
 const getKanyeQuoteCallback = (response) => (err, res, body) => {
