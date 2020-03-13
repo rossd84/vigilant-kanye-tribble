@@ -16,13 +16,24 @@ con.connect(err => console.log(err))
 
 
 const getKanyeWrapper = (wisdom) => `
-<h1>${wisdom}</h1>
-<button onClick="addWisdom()">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<main id="wrapper" class="wrapper main">
+<div class="innerwrapper">
+<a href="/"><h1>Kanye Quotes</h1></a>
+<h2 class="kanye">${wisdom}</h1>
+<button class="quotes" onClick="addWisdom()">
   Add
 </button>
+<<<<<<< HEAD
 <button onClick="resetWisdom()">Get A New Quote</button>
 <script>function addWisdom(){ fetch('/add') };function resetWisdom(){fetch('${KanyeURL}').then((response) => {
     return response.json()}).then((data) => {document.querySelector('h1').innerHTML = data.quote})}</script>
+=======
+<button class="quotes new_quote" onClick="window.location.reload();">New Quote</button>
+</div></main>
+<script>function addWisdom(){ fetch('/add') }</script>
+>>>>>>> b33fa87... Add uniform css to all pages
 `
 
 const getKanyeQuoteCallback = (response) => (err, res, body) => {
@@ -76,8 +87,8 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname + '/views/login.html')
 })
 
-app.get('/assets/login.css', (req, res) => {
-    res.sendFile(__dirname + '/assets/login.css')
+app.get('/assets/css/style.css', (req, res) => {
+    res.sendFile(__dirname + '/assets/css/style.css')
 })
 
 app.get('/best', getBest)

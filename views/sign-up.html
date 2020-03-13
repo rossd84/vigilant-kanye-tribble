@@ -5,40 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <main id="wrapper">
-        <h1>Kanye Quotes</h1>
-       
-        <h2>Sign up for an Account</h2>
-        <form action="/sign-up" method="post" id="sign-up-form">
-
-            <label for="username">
-                Username: 
-            <input type="text" name="username" id="username" required>
-            </label>
-
-            <label for="Email">
-                    Email: 
-                <input type="email" name="email" id="email" required>
-                </label>
-
-            <label for="password">
-                Password: 
-                <input type="password" name="password" id="password" required>
-            </label>
-            <label for="confirm">
-                Confirm Password: 
-                <input type="password" name="confirm" id="confirm" required>
-            </label>
-
-            <input type="submit" value="Submit">
-            
-            
-        </form>
-
+    <main id="wrapper" class="wrapper">
+        <div class="innerwrapper">
+            <a href="/"><h1>Kanye Quotes</h1></a>            
+            <form action="/sign-up" method="post" id="sign-up-form" class="form">
+                <h2>Sign up for an Account</h2>
+                <hr/>
+                <div class="container sign_up_form_container">
+                    <label for="username">
+                        <strong>Username</strong> 
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                    </label>
+        
+                    <label for="Email">
+                            <strong>Email</strong> 
+                        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                        </label>
+        
+                    <label for="password">
+                        <strong>Password</strong> 
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                    </label>
+                    <label for="confirm">
+                        <strong>Confirm Password</strong>
+                        <input type="password" name="confirm" id="confirm" placeholder="Re-Enter Password" required>
+                    </label>
+                    <button class="submit_button login_button" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
     </main>
-    
 </body>
 </html>

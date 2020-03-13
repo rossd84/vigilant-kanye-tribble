@@ -1,0 +1,134 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(23, 28, 31);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 16px;
+}
+
+hr {
+    border-color: rgb(23, 28, 31);
+}
+
+a {
+    color: rgb(219, 219, 219);
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(219, 219, 219);
+    padding-top: 20px;
+}
+
+.innerwrapper {
+    text-align: center;
+    min-width: 500px;
+}
+
+.kanye {
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 2px;
+    margin: 50px 0;
+}
+
+/* MAIN PAGE */
+.main p {
+    text-align: center;
+    font-style: italic;
+}
+.mainpage_form {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    border-radius: 10px;
+}
+
+.login_links {
+    text-align: center;
+}
+
+.login_links a {
+    color: gold;
+    margin: 10px;
+}
+
+/* QUOTES */
+
+.quotes {
+    max-width: 200px;
+    margin: 20px;
+}
+
+/* FORM PAGES */
+.form {
+    border: 5px solid rgb(13, 13, 14);
+    max-width: 500px;
+    border-radius: 10px;
+    }
+
+input[type=text], 
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(18,21,22);
+    background-color: rgb(18, 21, 22);
+    box-sizing: border-box;
+    }
+
+.submit_button {
+    background-color: #70a125;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grabbing;
+    width: 100%;
+    }
+
+.login_title {
+    text-align:center;
+    font-size:18;
+    }
+
+button:hover {
+    opacity: 0.8;
+    }
+
+.form_container {
+    text-align: left;
+    margin: 24px 50px 12px;
+    }
+
+.container {
+    padding: 16px;
+    text-align:left;
+    }
